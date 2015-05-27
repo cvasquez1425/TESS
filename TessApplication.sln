@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Web
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{31421210-4C94-4EEF-8ADC-A6CFE0C88319}"
+	ProjectSection(SolutionItems) = preProject
+		License.txt = License.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{2D8D01F3-AAD5-422E-B708-493FF6C53859}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{2CC379DF-86A7-43C8-8DC9-A47C538B8054}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{8666DE6D-4BAF-451A-A196-AC9A4E8FFED2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{C468F0B5-E079-48D9-B672-2D53C7B2A4ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TessWebApplication", "TessWebApplication\TessWebApplication.csproj", "{B4619984-AE45-4B1A-A1FE-FCF4D53BFDAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log", "Log\Log.csproj", "{91197250-3D50-4C0B-907E-D5D54F61BA1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchKit", "SearchKit\SearchKit.csproj", "{D72DE334-66E2-4842-9D39-2BB3359B561A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4619984-AE45-4B1A-A1FE-FCF4D53BFDAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4619984-AE45-4B1A-A1FE-FCF4D53BFDAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4619984-AE45-4B1A-A1FE-FCF4D53BFDAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4619984-AE45-4B1A-A1FE-FCF4D53BFDAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91197250-3D50-4C0B-907E-D5D54F61BA1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91197250-3D50-4C0B-907E-D5D54F61BA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91197250-3D50-4C0B-907E-D5D54F61BA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91197250-3D50-4C0B-907E-D5D54F61BA1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D72DE334-66E2-4842-9D39-2BB3359B561A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D72DE334-66E2-4842-9D39-2BB3359B561A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D72DE334-66E2-4842-9D39-2BB3359B561A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D72DE334-66E2-4842-9D39-2BB3359B561A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8666DE6D-4BAF-451A-A196-AC9A4E8FFED2} = {31421210-4C94-4EEF-8ADC-A6CFE0C88319}
+		{C468F0B5-E079-48D9-B672-2D53C7B2A4ED} = {31421210-4C94-4EEF-8ADC-A6CFE0C88319}
+		{B4619984-AE45-4B1A-A1FE-FCF4D53BFDAF} = {2D8D01F3-AAD5-422E-B708-493FF6C53859}
+		{91197250-3D50-4C0B-907E-D5D54F61BA1A} = {2CC379DF-86A7-43C8-8DC9-A47C538B8054}
+		{D72DE334-66E2-4842-9D39-2BB3359B561A} = {2CC379DF-86A7-43C8-8DC9-A47C538B8054}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

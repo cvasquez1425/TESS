@@ -1,0 +1,105 @@
+﻿.LV_Table
+{
+	clear: both;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	white-space: nowrap;
+	font: 10px "Trebuchet MS" , Verdana, Arial, Helvetica, sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-collapse: collapse;
+}
+
+.LV_Table th
+{
+}
+.LV_Table td
+{
+	border: 1px solid #C1DAD7;
+	background: #fff;
+	padding: 0px 0px 0px 2px;
+	margin: 0px;
+	white-space: nowrap;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.LV_TableTS tr.a td
+{
+	border: 1px solid #C1DAD7;
+	background-color: #edf5ff;
+	padding: 0px 0px 0px 2px;
+	margin: 0px;
+	white-space: nowrap;
+	text-align: left;
+	vertical-align: middle;
+}
+
+/* TS for title search */
+.LV_TableTS
+{
+	clear: both;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	white-space: nowrap;
+	font: 10px "Trebuchet MS" , Verdana, Arial, Helvetica, sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-collapse: collapse;
+}
+
+.LV_TableTS th
+{
+}
+.LV_TableTS td
+{
+	border: 1px solid #C1DAD7;
+	background: #fff;
+	padding: 0px 0px 0px 2px;
+	margin: 0px;
+	white-space: nowrap;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.LV_TableTS tr.a td
+{
+	border: 1px solid #C1DAD7;
+	background-color: #edf5ff;
+	padding: 0px 0px 0px 2px;
+	margin: 0px;
+	white-space: nowrap;
+	text-align: left;
+	vertical-align: middle;
+}
+/* The column that holds A field name */
+.HeaderText
+{
+	text-align: right !important;
+	width:0% !important;
+	white-space:nowrap !important;
+	font-weight:bold;
+}
+/* The column that holds A field value */
+/* This is for value which length is Shorter */
+.DataTextShort
+{
+	text-align: left !important;
+	width:20% !important;
+}
+/* The column that holds A field value */
+/* This is for value which length is Longer */
+.DataTextLong
+{
+	text-align: left !important;
+	width:40% !important;
+	white-space:normal !important;
+}
+a.linkButton:link
+{
+	color: red;
+	font-weight:bold;
+}
+/* Alternating rows */

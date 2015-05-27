@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SearchKit.ExpandableQuery&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAAAAAAAghAEAAAAgAAAAAAAAAAEAAAAAAAAgAA=</HashCode>
+      <FileName>ExpandableQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SearchKit.ExpandableQueryProvider&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAgAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExpandableQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SearchKit.PredicateBuilder" Collapsed="true">
+    <Position X="6.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAACAAAAAAAAAAAAAAAAAAAAgAAgAAAAAAAA=</HashCode>
+      <FileName>PredicateBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SearchKit.ExpressionExpander" Collapsed="true">
+    <Position X="2.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAwAAAAAAAAAAAACAAEAAAAAAAAAAgAABA=</HashCode>
+      <FileName>ExpressionExpander.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SearchKit.ExpressionVisitor" Collapsed="true">
+    <Position X="2.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAABACAAAYwBAQAAAAAISDAAAAEAgACAFAAAAgEQAA=</HashCode>
+      <FileName>ExpressionVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SearchKit.Extensions" Collapsed="true">
+    <Position X="8.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAACAAAAAAIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SearchKit.Linq" Collapsed="true">
+    <Position X="5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAABAAAAAAA=</HashCode>
+      <FileName>Linq.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,79 @@
+﻿.tablestyle
+{
+    font-family: arial;
+    font-size: xx-small;
+    border: solid 1px #7f7f7f;
+    width: 97%;
+}
+
+.altrowstyle
+{
+    background-color: #edf5ff;
+}
+
+.headerstyle
+{
+    background: url(../Images/sprite.png) repeat-x 0px 0px;
+}
+
+.headerstyle th
+{
+    background: url(../Images/sprite.png) repeat-x 0px 0px;
+    border-color: #989898 #cbcbcb #989898 #989898;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px 1px;
+    color: #000;
+    padding: 2px;
+    text-align: center;
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+
+.headerstyle th a
+{
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    display: block;
+    padding-right: 10px;
+}
+
+.rowstyle .sortaltrow, .altrowstyle .sortaltrow
+{
+    background-color: #edf5ff;
+}
+
+.rowstyle .sortrow, .altrowstyle .sortrow
+{
+    background-color: #dbeaff;
+}
+
+.rowstyle td, .altrowstyle td
+{
+    padding: 2px;
+    padding-left: 4px;
+    border-right: solid 1px #cbcbcb;
+}
+
+.headerstyle .sortascheader
+{
+    background: url(../Images/sprite.png) repeat-x 0px -100px;
+}
+
+.headerstyle .sortascheader a
+{
+    background: url(../Images/dt-arrow-up.png) no-repeat right 50%;
+}
+
+.headerstyle .sortdescheader
+{
+    background: url(../Images/sprite.png) repeat-x 0px -100px;
+}
+
+.headerstyle .sortdescheader a
+{
+    background: url(../Images/dt-arrow-dn.png) no-repeat right 50%;
+}
+
+

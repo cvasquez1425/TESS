@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Reports>
+  <Report>
+    <DisplayName>Client Advice (Contract)</DisplayName>
+    <ReportNameLocation>/Tess Reports/Escrow Reports/Client Advice (Contract)</ReportNameLocation>
+  </Report>
+  <Report>
+    <DisplayName>Escrow Disbursement Summary</DisplayName>
+    <ReportNameLocation>/Tess Reports/Escrow Reports/Escrow Disbursement Summary</ReportNameLocation>
+  </Report>
+  <Report>
+    <DisplayName>Escrow Disbursement Summary 108</DisplayName>
+    <ReportNameLocation>/Tess Reports/Escrow Reports/Escrow Disbursement Summary 108</ReportNameLocation>
+  </Report>
+  <Report>
+    <DisplayName>Escrow Disbursement Summary 116-118</DisplayName>
+    <ReportNameLocation>/Tess Reports/Escrow Reports/Escrow Disbursement Summary 116-118</ReportNameLocation>
+  </Report>
+  <Report>
+    <DisplayName>Escrow Disbursement Summary 121</DisplayName>
+    <ReportNameLocation>/Tess Reports/Escrow Reports/Escrow Disbursement Summary 121</ReportNameLocation>
+  </Report>
+  <Report>
+    <DisplayName>Owner Policy Inventory Register</DisplayName>
+    <ReportNameLocation>/Tess Reports/Escrow Reports/Owner Policy Inventory Register</ReportNameLocation>
+  </Report>
+  <Report>
+    <DisplayName>Owner Policy Remittance</DisplayName>
+    <ReportNameLocation>/Tess Reports/Escrow Reports/Owner Policy Remittance</ReportNameLocation>
+  </Report>
+</Reports>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Log.SingletonLogger">
+    <Position X="2.25" Y="1.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="Log.SingletonLogger.LogEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SingletonLogger.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAYIBAAAAABCAEIhAAACAQAAAQEQEAAE=</HashCode>
+      <FileName>SingletonLogger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Log.LogEventArgs">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAEBAAAAAAgAAAAAAABEABAIAQAAAE=</HashCode>
+      <FileName>LogEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Log.ObserverLogToDatabase" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObserverLogToDatabase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Log.ObserverLogToEmail" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAigAAAAAACAAACAAEAA=</HashCode>
+      <FileName>ObserverLogToEmail.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Log.ObserverLogToEventlog" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObserverLogToEventlog.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Log.ObserverLogToFile" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObserverLogToFile.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Log.ILog">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ILog.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Log.LogSeverity">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAYAAAAAAABAAAAAAAAAAAAAAAEAEAAA=</HashCode>
+      <FileName>LogSeverity.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,19 @@
+﻿<asp:TextBox CssClass="defaultTextbox" runat="server" />
+<asp:DropDownList CssClass="defaultDropDownList" runat="server"/>
+<asp:CheckBox CssClass="defaultCheckBox"  runat="server" />
+<asp:Button runat="server" CssClass="defaultButton" />
+<asp:RequiredFieldValidator CssClass="defaultValidation" runat="server" />
+<asp:RegularExpressionValidator CssClass="defaultValidation" runat="server" />
+<asp:RangeValidator runat="server" CssClass="defaultValidation" />
+<asp:DataGrid CssClass="defaultDataGrid" runat="server" AutoGenerateColumns="false">
+    <AlternatingItemStyle BackColor="#f5fafa" />
+    <ItemStyle BackColor="#ffffff" />
+</asp:DataGrid>
+<asp:GridView runat="server" CssClass="tablestyle" >
+   <AlternatingRowStyle CssClass="altrowstyle" />
+   <HeaderStyle CssClass="headerstyle" />
+   <RowStyle CssClass="rowstyle" />
+</asp:GridView>
+
+
+                

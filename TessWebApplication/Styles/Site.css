@@ -1,0 +1,539 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+body
+{
+	clear: both;
+	background: #efefef;
+	color: black; /*#696969*/
+	font-size: .80em;
+	font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+A:link
+{
+	text-decoration: none;
+}
+A:visited
+{
+	text-decoration: none;
+}
+A:active
+{
+	text-decoration: none;
+}
+A:hover
+{
+	text-decoration: underline;
+	color: red;
+}
+a:link img, a:active img, a:visited img
+{
+	border: none;
+}
+a:hover img
+{
+	border: none;
+}
+p
+{
+	margin-bottom: 10px;
+	line-height: 1.6em;
+}
+
+/* Tooltip popup
+----------------------------------------------------------*/
+a.info
+{
+	position: relative; /*this is the key*/
+	z-index: 24;
+	color: #000;
+	text-decoration: none;
+	clear: both;
+}
+a.info:hover
+{
+	z-index: 25;
+	background-color: #ff0;
+	clear: both;
+}
+a.info span
+{
+	display: none;
+	clear: both;
+}
+a.info:hover span
+{
+	/*the span will display just on :hover state*/
+	display: block;
+	position: absolute;
+	top: -1.5em;
+	z-index: 25;
+	left: 2em;
+	width: 30em;
+	border: 1px solid #0cf;
+	background-color: #FFF;
+	color: black;
+	padding: 4px;
+	margin: 4px;
+	text-align: left;
+	font-weight: normal;
+	clear: both;
+}
+
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6
+{
+	font-size: 1.5em;
+	color: #666666;
+	font-variant: small-caps;
+	text-transform: none;
+	font-weight: 200;
+	margin-bottom: 0px;
+}
+h1
+{
+	font-size: 1.6em;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+h2
+{
+	font-size: 1.5em;
+	font-weight: 600;
+}
+h3
+{
+	font-size: 1.2em;
+}
+h4
+{
+	font-size: 1.1em;
+}
+h5, h6
+{
+	font-size: 1em;
+}
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+	margin-top: 0px;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+.page
+{
+	width: 960px;
+	background-color: #ffffff;
+	margin: 5px auto 0px auto;
+	border: 1px solid #496077;
+}
+.header
+{
+	margin: 0px;
+	padding: 0px;
+	background: #aa975d;
+	width: 100%;
+	height: 55px;
+}
+.header h1
+{
+	font-weight: 700;
+	margin: 0px;
+	padding: 0px 0px 0px 20px;
+	color: #f9f9f9;
+	border: none;
+	line-height: 2em;
+	font-size: 2em;
+}
+.main
+{
+	padding: 0px 12px;
+	margin: 12px 8px 8px 8px;
+	min-height: 420px;
+}
+.leftCol
+{
+	padding: 6px 0px;
+	margin: 12px 8px 8px 8px;
+	width: 200px;
+	min-height: 200px;
+}
+.footer
+{
+	color: #4e5766;
+	padding: 8px 0px 0px 0px;
+	margin: 0px auto;
+	text-align: center;
+	line-height: normal;
+}
+
+/* HEADER MENU
+----------------------------------------------------------*/
+/* menu */
+#menu
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	color: #fff;
+	line-height: 45px;
+	display: inline-block;
+	float: left;
+}
+#menu a
+{
+	color: #fff;
+	text-decoration: none;
+}
+#menu > li
+{
+	background: #206283 none repeat scroll 0 0;
+	cursor: pointer;
+	float: left;
+	position: relative;
+	padding: 0px 10px;
+}
+#menu > li a:hover
+{
+	color: #B0D730;   
+}
+#menu .logo
+{
+	padding: 0px;
+}
+/* sub-menus*/
+#menu ul
+{
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	display: inline;
+}
+#menu li ul
+{
+	position: absolute;
+	left: -10px;
+	top: 0px;
+	margin-top: 45px;
+	width: 170px; /* search drop down width */
+	line-height: 16px;
+	background-color: #f1f1f1; /*#172322*/
+	color: #0395CC; /* for IE */
+	display: none;
+}
+#menu li:hover ul
+{
+	display: block;
+}
+#menu li ul li
+{
+	display: block;
+	margin: 5px 20px;
+	padding: 5px 0px;
+	border-top: dotted 1px #606060; /* border color in between list */
+	list-style-type: none;
+}
+#menu li ul li:first-child
+{
+	border-top: none;
+}
+#menu li ul li a
+{
+	display: block;
+	color: #6e6e6e;
+}
+#menu li ul li a:hover
+{
+	color: #7FCDFE;
+}
+/* main submenu */
+#menu #main
+{
+	left: 0px;
+	top: -20px;
+	padding-top: 20px;
+	background-color: #7cb7e3;
+	color: #fff;
+	/*z-index: 999;*/
+}
+.searchContainer div
+{
+	padding: 4px;
+	padding-right: 0px;
+	background-color: white;
+	display: inline;
+	border: none;
+}
+.searchContainer input[type="text"]
+{
+	clear: both;
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	font-weight: bold;
+}
+
+/* End of Header Menu */
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+fieldset
+{
+	clear: both;
+	margin: 2px 2px 2px 2px;
+	padding: 0px 0px 5px 5px;
+	border: 1px solid #ccc;
+	width: 98%;
+}
+fieldset p
+{
+	margin: 2px 12px 10px 10px;
+}
+fieldset label.inline
+{
+	display: inline;
+}
+legend
+{
+	clear: both;
+	font-size: .1em;
+	font-weight: 500;
+	padding: 0px 4px 4px 4px;
+	margin: .2em;
+	font: bold 11px "Trebuchet MS" , Verdana, Arial, Helvetica, sans-serif;
+	letter-spacing: 2px;
+}
+/* Table Style */
+.table
+{
+	clear: both;
+	width: 99%;
+	padding: 0px;
+	margin: 0px;
+	white-space: nowrap;
+	font: 10px "Trebuchet MS" , Verdana, Arial, Helvetica, sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-collapse: collapse;
+}
+.table caption
+{
+	padding: 0px 0px 0px 10px;
+	margin: 0px 0px 0px 0px;
+	width: 98%;
+	font: italic 11px "Trebuchet MS" , Verdana, Arial, Helvetica, sans-serif;
+	text-align: left;
+	white-space: nowrap;
+	border: none;
+	background: #fff url(../Images/bullet1.gif) no-repeat;
+}
+.table tr:hover td
+{
+}
+.table td
+{
+	border: 1px solid #C1DAD7;
+	background: #fff;
+	padding: 2px;
+	margin: 2px;
+	white-space: nowrap;
+	text-align: right;
+	vertical-align: middle;
+}
+.table td.left
+{
+	text-align: left;
+}
+.table td.alt
+{
+	background: #F5FAFA;
+	text-align: left;
+	vertical-align: middle;
+}
+.table td.altNRB
+{
+	background: #F5FAFA;
+	white-space: nowrap;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+	border-right: none;
+}
+.table td.footer
+{
+	border: 0px;
+}
+.table tr:hover td.footer
+{
+	background: #fff;
+	color: #fff;
+}
+.caption
+{
+	padding: 0px 0px 0px 10px;
+	margin: 0px 0px 0px 0px;
+	width: 98%;
+	font: italic 11px "Trebuchet MS" , Verdana, Arial, Helvetica, sans-serif;
+	text-align: left;
+	white-space: nowrap;
+	border: none;
+	background: #fff url(../Images/bullet1.gif) no-repeat;
+}
+/* End of Table Style */
+
+
+/* MISC  
+----------------------------------------------------------*/
+.lglName   /*z-index=900 on legal name address NEW Feb 2014 add again to update TESSWEB Feb 11 2014 11 PM*/
+{
+    width: 100%;
+    z-index:91;
+}
+
+.clear
+{
+	clear: both;
+}
+.title
+{
+	display: block;
+	float: left;
+	text-align: left;
+	width: auto;
+}
+/* center header menu */
+.headerMenu
+{
+	display: block;
+	float: left;
+	text-align: left;
+	width: auto;
+	margin-left: 4em;
+	/*position:fixed; change request Jan 2014 */
+    position:absolute; 
+    /*z-index:1000;      /* RIQ-315 */
+    z-index:100;      /* RIQ-315 */    
+}
+.loginDisplay
+{
+	font-size: 1.1em;
+	display: block;
+	text-align: right;
+	padding: 10px;
+	color: White;
+}
+.divLNShort 
+{
+    width: 99%; 
+    padding: 0px; 
+    margin: 0px; 
+    height: 72px; 
+    overflow: auto; 
+    position: relative;
+    z-index:99;         /* RIQ-315 */
+}
+.divLNTall 
+{
+    width: 99%; 
+    padding: 0px; 
+    margin: 0px; 
+    height: 180px; 
+    overflow: auto; 
+    position: relative;
+}
+.error
+{
+	color: Red; /*font: bold 14px "Trebuchet MS" , Verdana, Arial, Helvetica, sans-serif;*/
+	font-family: bold 12px "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif;
+}
+
+/* FORM CONTROLS  
+----------------------------------------------------------*/
+.defaultTextbox
+{
+	clear: both;
+	border: 1px solid #dcdedc;
+	width: 100px;
+	height: 15px;
+	font-size: small;
+	color: #565656;
+	margin: 0px 4px 0px 2px;
+	padding: 2px 8px 2px 2px;
+	font-size: 14px;
+}
+.defaultTextbox:focus, input.defaultTextbox_focus
+{
+	border-color: #FA5858;
+}
+.defaultDropDownList
+{
+	clear: both;
+	color: #565656;
+	margin: 2px;
+	padding: 2px;
+	width: 110px;
+	font-size: 14px;
+}
+/* CheckBox Style */
+.defaultCheckBox
+{
+	clear: both;
+	margin: 0px 4px 0px 2px;
+	padding: 2px 8px 2px 2px;
+}
+/* Button Style */
+.defaultButton
+{
+	clear: both;
+	float: none;
+	margin: 2px;
+	background-color: #f5f5f5;
+	border: 1px solid #dedede;
+	border-top: 1px solid #eee;
+	border-left: 1px solid #eee;
+	font: bold 9px auto "Trebuchet MS" , Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 100%;
+	color: #565656;
+	cursor: pointer;
+	padding: 3px 8px 4px 5px; /* Links */
+}
+.defaultButton:hover
+{
+	clear: both;
+	background: #F0FFF0;
+	color: #339;
+}
+
+.defaultDataGrid
+{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.defaultValidation
+{
+	font-weight: bolder;
+	color: Red;
+	font-size: 18px;
+}
+.divSubForm
+{
+	clear: both;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	height: 100px;
+	overflow: auto;
+}
+.redBackground 
+{
+    background-color: red;
+}

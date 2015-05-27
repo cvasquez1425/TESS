@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SingleForm.master.cs"
+    Inherits="Greenspoon.Tess.MasterPages.SingleForm" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/DropDownButton.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/GridView.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/ListView.css" rel="Stylesheet" type="text/css" />
+    <script src="<%= Page.ResolveUrl("~/Scripts/jquery-1.4.2.min.js") %>" type="text/javascript"></script>
+    <script src="<%= Page.ResolveUrl("~/Scripts/thickbox.js") %>" type="text/javascript"></script>
+    <link href="~/Styles/thickbox.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+   
+    </asp:ContentPlaceHolder>
+</head>
+<body style="overflow: auto; height: 100%; padding: 0px; margin: 0px;">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="smSingleForm" runat="server" EnablePartialRendering="true">
+    </asp:ScriptManager>
+    <div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </div>
+    </form>
+</body>
+</html>

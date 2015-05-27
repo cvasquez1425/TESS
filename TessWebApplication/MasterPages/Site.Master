@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Greenspoon.Tess.MasterPages.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title>Timeshare Escrow Support System</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/DropDownButton.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/thickbox.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/GridView.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/ListView.css" rel="Stylesheet" type="text/css" />
+    <script src="<%= Page.ResolveUrl("~/Scripts/jquery-1.4.2.min.js") %>" type="text/javascript"></script>
+    <script src="<%= Page.ResolveUrl("~/Scripts/thickbox.js") %>" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1 title="Timeshare Escrow Support System: By Greenspoon">
+                    Tess
+                </h1>
+            </div>
+            <div class="headerMenu">
+                <div style="margin-left: 50px;">
+                    <div>
+                        <script type="text/javascript">
+                            function GotoBatchEscrow(batchId, contractId) {
+                                var url = "../Pages/BatchEscrow.aspx?a=e&beid=" + batchId + " &cid=" + contractId;
+                                tb_remove();
+                                window.location.href = url;
+                            }
+                        </script>
+                    </div>
+                    <ul id="menu">
+                        <li><a href='<%= Page.ResolveUrl("~/Default.aspx") %>'>Home</a> </li>
+                        <li><a href="#">Admin</a>
+                            <ul id="Ul1">
+                                <li><a href='<%= Page.ResolveUrl("~/Admin/Pages/FormSetup.aspx") %>'>Application Setup</a></li>
+                                <li><a href='<%= Page.ResolveUrl("~/Admin/Pages/RulesSetup.aspx") %>'>Rules Setup</a></li>
+                                <li><a href='<%= Page.ResolveUrl("~/Admin/Pages/CrystalSetup.aspx") %>'>Crystal Setup</a></li>
+                                <li>
+                                    <asp:LinkButton ID="statBatchEscrow" runat="server" Text="Batch Update by Escrow Key"
+                                        OnClick="StatusUpdateClick" CausesValidation="false" />
+                                </li>
+                                <li><a href='<%= Page.ResolveUrl("~/Admin/Pages/BulkStatusUpdate.aspx") %>'>Bulk Update</a>
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton1" runat="server" Text="Bulk Recording Info Update"
+                                        OnClick="BulkRecordingInfoUpdateClick" CausesValidation="false" />
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="lnkCanStatUp" runat="server" Text="Bulk Cancel Update" OnClick="BulkCancelStatusUpdateClick"
+                                        CausesValidation="false" />
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton2" runat="server" Text="Myrtle Beach Bulk Update"
+                                        OnClick="BulkUpdateUploadMyrtle" CausesValidation="false" />
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="lnkCommentByEscrowKey" runat="server" Text="Bulk Comments By Escrow Key Update"
+                                        OnClick="BulkUpdateCommentsByEscrowKey" CausesValidation="false" />
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Reports</a>
+                            <ul id="help">
+                                <li>
+                                    <asp:LinkButton ID="BatchEscrow" runat="server" Text="Escrow Batch" OnClick="ReportsClick"
+                                        CausesValidation="false" /></li>
+                                <li>
+                                    <asp:LinkButton ID="Cancel" runat="server" Text="Cancel Batch" OnClick="ReportsClick"
+                                        CausesValidation="false" /></li>
+<%--                                <li>
+                                    <asp:LinkButton ID="Foreclosure" runat="server" Text="Foreclosure Batch" OnClick="ReportsClick"
+                                        CausesValidation="false" /></li>--%>
+                                <li>
+                                    <asp:LinkButton ID="lnkAnalytic" runat="server" Text="Analytic Reports" OnClick="AnalyticClick"
+                                        CausesValidation="false" /></li>
+                            </ul>
+                        </li>
+                        <li><a id="btnShowPopup" class="thickbox" title="Title Search" href='<%= Page.ResolveUrl("~/Pages/TitleSearch.aspx?keepThis=false&TB_iframe=true&height=535&width=850") %>'>
+                            Title Search</a> </li>
+                        <li><a href="#">Actions</a>
+                            <ul id="Ul2">
+                                <li><a href='<%= Page.ResolveUrl("~/Pages/BatchEscrow.aspx") %>'>Escrow Batch</a></li>
+                                <li><a href='<%= Page.ResolveUrl("~/Pages/BatchCancel.aspx") %>'>Cancel Batch</a></li>
+                                <li><a href='<%= Page.ResolveUrl("~/Pages/Foreclosure.aspx" ) %>'>Foreclosure Batch</a></li>
+                            </ul>
+                        </li>
+                        <li class="searchContainer">
+                            <div>
+                                <asp:Panel DefaultButton="btnSearch" runat="server" ID="Panel1">
+                                    <input type="text" id="searchField" runat="server" />
+                                    <asp:Button runat="server" ID="btnSearch" CausesValidation="false" Text="Go" OnClick="DoSearch" />
+                                </asp:Panel>
+                            </div>
+                            <div id="searchOptions" runat="server" style="padding: 0px; margin: 0px; border: none;">
+                                <ul id="search">
+                                    <li>
+                                        <asp:RadioButtonList ID="searchContext" runat="server">
+                                            <asp:ListItem Value="mi" Text="Master ID" />
+                                            <asp:ListItem Value="ebi" Text="Escrow Key" />
+                                            <asp:ListItem Value="ebiL" Text="Escrow Key List" />
+                                            <%--  <asp:ListItem Value="bk" Text="Database" />--%>
+                                            <asp:ListItem Value="dk" Text="Dev K" />
+                                            <asp:ListItem Value="ck" Text="Client Batch" />
+                                            <asp:ListItem Value="pbk" Text="Project_ID Database" />
+                                        </asp:RadioButtonList>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div style="float: none; clear: both;">
+                </div>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <LoggedInTemplate>
+                        <span class="bold" style="font-size: x-small;">
+                            <asp:LoginName ID="HeadLoginName" runat="server" />
+                            !
+                            <br />
+                            <%= DateTime.Now.ToString("D") %>
+                        </span>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+        </div>
+        <div class="clear" />
+        <div class="main">
+            <asp:ScriptManager ID="scMaster" runat="server" EnablePartialRendering="true">
+            </asp:ScriptManager>
+            <script type="text/javascript">
+                function pageLoad(sender, args) {
+                    if (args.get_isPartialLoad()) {
+                        tb_remove();
+                        //  reapply the thick box stuff
+                        tb_init('a.thickbox');
+                    }
+                }
+            </script>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+    </form>
+</body>
+</html>
