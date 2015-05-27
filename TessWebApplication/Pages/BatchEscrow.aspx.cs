@@ -16,6 +16,9 @@ using System.DirectoryServices;
 #endregion
 namespace Greenspoon.Tess.Pages
 {
+    /// <summary>
+    /// Git Copy for my records.
+    /// </summary>
     public partial class BatchEscrow : PageBase
     {
         protected void Page_Load(object sender, EventArgs e)
